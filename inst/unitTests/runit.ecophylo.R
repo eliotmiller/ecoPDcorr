@@ -52,12 +52,12 @@ test.pd.trad <- function() {
     weed.com$cover, weed.tree.notultra)
 
   ans <- c(3.1523920934, 3.1523920934, 3.1523920934)
-  checkEqualsNumeric(ans, ecoPD(ecophydata1, method="trad"))
+  checkEqualsNumeric(ans, ecoPDcorr(ecophydata1, method="trad"))
 
   ans <- c(3.1523920934, 3.0435275907, 2.783382486)
-  checkEqualsNumeric(ans, ecoPD(ecophydata2, method="trad"))
+  checkEqualsNumeric(ans, ecoPDcorr(ecophydata2, method="trad"))
 
-  checkException(ecoPD(ecophydata.notultra, method="trad"))
+  checkException(ecoPDcorr(ecophydata.notultra, method="trad"))
 }
 
 test.pd.poly <- function() {
@@ -72,12 +72,12 @@ test.pd.poly <- function() {
     weed.com$cover, weed.tree.notultra)
 
   ans <- c(8.26633721124392, 7.05995380972657, 7.54247469939537)
-  checkEqualsNumeric(ans, ecoPD(ecophydata1, method="poly"))
+  checkEqualsNumeric(ans, ecoPDcorr(ecophydata1, method="poly"))
 
   ans <- c(8.26633721124392, 5.64834888836452, 5.7174610946672)
-  checkEqualsNumeric(ans, ecoPD(ecophydata2, method="poly"))
+  checkEqualsNumeric(ans, ecoPDcorr(ecophydata2, method="poly"))
 
-  checkException(ecoPD(ecophydata.notultra, method="poly"))
+  checkException(ecoPDcorr(ecophydata.notultra, method="poly"))
 }
 
 test.pd.yule <- function() {
@@ -92,12 +92,12 @@ test.pd.yule <- function() {
     weed.com$cover, weed.tree.notultra)
 
   ans <- c(4.72177974392577, 4.46454888807077, 4.6275784250289)
-  checkEqualsNumeric(ans, ecoPD(ecophydata1, method="yule"))
+  checkEqualsNumeric(ans, ecoPDcorr(ecophydata1, method="yule"))
 
   ans <- c(4.72177974392577, 3.97813049106849, 3.76931214789738)
-  checkEqualsNumeric(ans, ecoPD(ecophydata2, method="yule"))
+  checkEqualsNumeric(ans, ecoPDcorr(ecophydata2, method="yule"))
 
-  checkException(ecoPD(ecophydata.notultra, method="yule"))
+  checkException(ecoPDcorr(ecophydata.notultra, method="yule"))
 }
 
 test.siteBySpecies <- function() {

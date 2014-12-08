@@ -1,6 +1,6 @@
-\name{ecoPD-package}
-\alias{ecoPD-package}
-\alias{ecoPD}
+\name{ecoPDcorr-package}
+\alias{ecoPDcorr-package}
+\alias{ecoPDcorr}
 \docType{package}
 \title{
 Ecologically-informed phylodiversity metrics in R
@@ -11,7 +11,7 @@ for combining ecological and phylogenetic information.
 }
 \details{
 \tabular{ll}{
-Package: \tab ecoPD\cr
+Package: \tab ecoPDcorr\cr
 Type: \tab Package\cr
 Version: \tab 0.2\cr
 Date: \tab 2009-11-18\cr
