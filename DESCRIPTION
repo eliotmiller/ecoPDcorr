@@ -1,7 +1,7 @@
 Package: ecoPDcorr
 Type: Package
 Title: Ecologically-informed phylodiversity metrics
-Version: 0.2
+Version: 0.3
 Date: 2009-11-18
 Author: Jim Regetz, Marc Cadotte, Jonathan Davies
 Maintainer: Jim Regetz <regetz@nceas.ucsb.edu>
