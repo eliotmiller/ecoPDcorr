@@ -25,7 +25,7 @@ setMethod("ed", signature(x="phylo4com"), function(x, na.rm=TRUE) {
         edgeLength(tree)[edgeId(tree, "root")] <- 0
 
         all.nodes <- nodeId(tree, type = "all")
-        des <- descendants(tree, all.nodes, type="tips")
+        des <- lapply(all.nodes, function(x) descendants(tree, x, "tips"))
         nv <- edgeLength(tree, all.nodes) / sapply(des, length)
         names(nv) <- all.nodes
 
